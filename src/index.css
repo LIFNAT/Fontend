@@ -1,0 +1,388 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #fff;
+}
+
+a {
+  color: #00e;
+}
+
+a:visited {
+  color: #551a8b;
+}
+
+a:hover {
+  color: #c00;
+}
+
+.personal-site {
+  width: min(100% - 32px, 840px);
+  margin: 24px auto;
+  padding: 0 18px;
+  border: 1px solid #aaa;
+  background: #fff;
+}
+
+.site-header {
+  padding-top: 16px;
+}
+
+.site-owner,
+.date-line,
+.byline {
+  color: #666;
+  font-size: 12px;
+}
+
+.site-owner {
+  margin: 0 0 5px;
+}
+
+.site-header h1 {
+  margin: 0;
+  color: #222;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.site-description {
+  margin: 5px 0 15px;
+  color: #555;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 8px 0;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  font-size: 13px;
+}
+
+.main-nav a[aria-current="page"] {
+  color: #222;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.page-columns {
+  padding: 18px 0 24px;
+}
+
+.story {
+  min-width: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.date-line {
+  margin: 0 0 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.story > h2 {
+  margin: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #999;
+  font-size: 26px;
+  font-weight: 400;
+}
+
+.byline {
+  margin: 6px 0 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+
+.story > p {
+  margin: 0 0 12px;
+}
+
+.fiction-note {
+  padding: 8px 10px;
+  border-left: 3px solid #888;
+  background: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.street-picture {
+  margin: 17px auto;
+}
+
+.person-picture {
+  float: right;
+  width: min(38%, 280px);
+  margin: 0 0 12px 18px;
+}
+
+.missing-person-photo {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  border: 1px solid #999;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.person-picture figcaption {
+  padding-top: 4px;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.story-photo {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  border: 1px solid #999;
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.street-picture figcaption {
+  padding-top: 4px;
+  color: #666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.story h3 {
+  clear: both;
+  margin: 19px 0 6px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #bbb;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.home-feature {
+  min-height: 190px;
+  padding: 10px 0;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+}
+
+.home-feature h3 {
+  margin-top: 4px;
+}
+
+.case-facts {
+  width: 100%;
+  margin: 18px 0;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.case-facts th,
+.case-facts td {
+  padding: 7px 9px;
+  border: 1px solid #bbb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.case-facts th {
+  width: 145px;
+  background: #f3f3f3;
+  font-weight: 400;
+}
+
+.timeline-page-table {
+  margin: 17px 0;
+}
+
+.plain-list {
+  margin: 5px 0 15px;
+  padding-left: 23px;
+}
+
+.timeline {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.timeline th,
+.timeline td {
+  padding: 5px 7px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  vertical-align: top;
+}
+
+.timeline th {
+  width: 88px;
+  color: #444;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.closing-note {
+  margin-top: 14px !important;
+  font-style: italic;
+}
+
+.guestbook {
+  margin-top: 20px;
+  padding-top: 8px;
+  border-top: 1px solid #999;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.guestbook h3 {
+  margin-top: 0;
+  border: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+}
+
+.guestbook p {
+  margin: 0 0 7px;
+}
+
+.guestbook-form {
+  display: grid;
+  gap: 7px;
+  max-width: 520px;
+  margin: 18px 0 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.guestbook-form input,
+.guestbook-form textarea {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #888;
+  border-radius: 0;
+  background: #fff;
+  color: #222;
+  font: inherit;
+}
+
+.guestbook-form textarea {
+  resize: vertical;
+}
+
+.guestbook-form button {
+  justify-self: start;
+  padding: 5px 12px;
+  border: 2px outset #ddd;
+  border-radius: 0;
+  background: #eee;
+  color: #111;
+  font: inherit;
+  cursor: pointer;
+}
+
+.guestbook-form button:active {
+  border-style: inset;
+}
+
+.form-error {
+  margin: 0;
+  color: #a00;
+}
+
+.guestbook-entries {
+  padding-left: 25px;
+}
+
+.guestbook-entries li {
+  padding: 10px 0;
+  border-bottom: 1px dotted #aaa;
+}
+
+.guestbook-entries p {
+  margin: 4px 0 0;
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0 14px;
+  border-top: 1px solid #999;
+  color: #666;
+  font-size: 11px;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 620px) {
+  .personal-site {
+    width: min(100% - 18px, 840px);
+    margin: 9px auto;
+    padding: 0 12px;
+  }
+
+  .site-header h1 {
+    font-size: 27px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    gap: 8px 15px;
+  }
+
+  .person-picture {
+    width: min(42%, 235px);
+    margin-left: 12px;
+  }
+
+  .case-facts th {
+    width: 115px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .person-picture {
+    float: none;
+    width: min(100%, 400px);
+    margin: 14px auto;
+  }
+}
