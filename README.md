@@ -25,11 +25,11 @@ A neighbor later recalled seeing a white van nearby, but could not give a clear 
 
 The site uses a simple white layout inspired by personal websites from the late 1990s. The guestbook does not save entries to a server; entries remain only in the current page session.
 
-## Run locally
 
-```sh
-npm install
-npm run dev
-```
 
-Create a production build with `npm run build`, or check the code with `npm run lint`.
+
+
+
+
+
+Alex portfolio
